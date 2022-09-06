@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap");
+
+* {
+  font-family: "Sora", sans-serif;
+  color: #fff;
+  
+}
+
+body {
+  background-image: linear-gradient(
+    to right top,
+    #1f4790,
+    #1a4487,
+    #15407e,
+    #123d75,
+    #10396c,
+    #123d70,
+    #154173,
+    #174577,
+    #1c5289,
+    #215f9b,
+    #246dad,
+    #277bc0
+  );
+  color: #000;
+}
+
+.wrapper {
+  height: 40vh;
+  width: 50vw;
+  margin: 2vh auto;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  border: 4px solid rgba(0, 0, 0, 0.55);
+  border-radius: 40px;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.4);
+}
+
+.title > h2 {
+  text-align: center;
+}
+
+.countdown {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo > img {
+  height: 8vh;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: rgba(0, 0, 0, 0.897);
+  font-size: 4rem;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+.container-day,
+.container-hour,
+.container-minutes,
+.container-seconds {
+   min-width: 6.5vw;
+  border-top: 2.5px solid rgba(0, 0, 0, 0.55);
+  border-bottom: 2.5px solid rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and(max-width: 800px) {
+  h1 {
+    font-size: 2.2rem;
+
+  }
+  h2 {
+    font-size: 1.8rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  .logo > img {
+    height: 6vh;
+  }
+  .wrapper {
+    width: 90vw;
+    border: 3px solid #000;
+    justify-content: space-around;
+  }
+  .countdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
